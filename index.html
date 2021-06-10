@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- формы записи label + input-->
+    <!-- 1 -->
+    <label for="userName">User name</label>
+    <input type="text" id="userName" />
+    <!-- 2 -->
+    <label>
+      <span>User name</span>
+      <input type="text" />
+    </label>
+    <!-- формы записи button / input -->
+    <button type="submit">Login</button>
+    <input type="submit" value="Login" />
+
+    <!-- post-form -->
+    <form action="#" method="post">
+      <label>
+        <span>First name</span>
+        <input
+          type="text"
+          placeholder="Name"
+          pattern="^[A-Z][a-z]{1,63}$"
+          required
+        />
+      </label>
+      <label>
+        <span>Email:</span>
+        <input type="email" placeholder="example@example.com" required />
+      </label>
+      <label>
+        <span>Password</span>
+        <input
+          type="password"
+          pattern="(?=.*[A-Z])(&=.*\d)^\w{8,60}$"
+          required
+        />
+      </label>
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- get-form -->
+    <form action="#" method="get">
+      <label>
+        <span>User name</span>
+        <input type="text" name="userName" />
+      </label>
+      <br />
+      <label><input type="radio" name="gender" value="female" />Famale</label>
+      <label><input type="radio" name="gender" value="male" />Male</label>
+      <label><input type="radio" name="gender" value="other" />Other</label>
+
+      <button type="submit">Find</button>
+    </form>
+  </body>
+</html>
