@@ -1,0 +1,7 @@
+input[type='tel']:valid {
+  border-color: green;
+}
+
+input[type='tel']:invalid {
+  border-color: red;
+}

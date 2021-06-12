@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- формы записи label + input-->
@@ -19,7 +20,7 @@
     <!-- формы записи button / input -->
     <button type="submit">Login</button>
     <input type="submit" value="Login" />
-
+    <!-- ------------------------------------------------- -->
     <!-- post-form -->
     <form action="#" method="post">
       <label>
@@ -29,11 +30,17 @@
           placeholder="Name"
           pattern="^[A-Z][a-z]{1,63}$"
           required
+          autofocus
         />
       </label>
       <label>
-        <span>Email:</span>
-        <input type="email" placeholder="example@example.com" required />
+        <span>Email</span>
+        <input
+          type="email"
+          placeholder="example@example.com"
+          required
+          autocomplete="on"
+        />
       </label>
       <label>
         <span>Password</span>
@@ -54,10 +61,65 @@
       </label>
       <br />
       <label><input type="radio" name="gender" value="female" />Famale</label>
-      <label><input type="radio" name="gender" value="male" />Male</label>
+      <label
+        ><input type="radio" name="gender" value="male" checked />Male</label
+      >
       <label><input type="radio" name="gender" value="other" />Other</label>
 
       <button type="submit">Find</button>
     </form>
   </body>
+  <!-- --------------------------------------------------------------- -->
+  <!-- text -->
+  <form action="">
+    <fieldset>
+      <legend>Text input</legend>
+      <input type="text" />
+      <input type="email" />
+      <input type="password" />
+      <input type="tel" pattern="^0[0-9]{2}-[0-9]{3}-[0-9]{4}$" />
+      <input type="search" />
+      <input type="url" />
+    </fieldset>
+  </form>
+  <!-- date/time -->
+  <input type="date" />
+  <input type="datetime" />
+  <input type="datetime-local" />
+  <input type="time" />
+  <input type="week" />
+  <input type="month" />
+
+  <input type="radio" />
+  <input type="checkbox" />
+
+  <input type="button" value="Click me" />
+  <input type="submit" />
+  <input type="reset" />
+  <input type="image" />
+
+  <input type="file" multiple />
+
+  <input type="color" />
+
+  <input type="hidden" />
+
+  <input type="range" min="0" max="100" value="50" step="2" />
+  <input type="number" min="-100" max="100" value="200" />
+
+  <select>
+    <optgroup label="Группа 1">
+      <option>Опция 1.1</option>
+    </optgroup>
+    <optgroup label="Группа 2">
+      <option>Опция 2.1</option>
+      <option>Опция 2.2</option>
+    </optgroup>
+    <optgroup label="Группа 3" disabled>
+      <option>Опция 3.1</option>
+      <option>Опция 3.2</option>
+      <option>Опция 3.3</option>
+    </optgroup>
+  </select>
+  <!-- ---------------------------------------------------------------------- -->
 </html>
